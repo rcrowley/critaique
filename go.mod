@@ -1,6 +1,6 @@
 module github.com/rcrowley/critaique
 
-go 1.24
+go 1.24.5
 
 require (
 	github.com/anthropics/anthropic-sdk-go v0.2.0-beta.3 // indirect
