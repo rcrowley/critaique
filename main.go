@@ -30,7 +30,7 @@ Synopsis: critaique prompts an LLM to make suggestions for improving your writin
 	}
 
 	fmt.Println(must2(claude.Prompt(fmt.Sprintf(
-		"Read and consider the rest of this prompt (after this paragraph) as if you were an editor preparing an article for publication. Provide feedback, make suggestions, and ask follow-up questions with the goal of helping the author improve their writing.\n\n%s",
+		"Read and consider the rest of this prompt (after this paragraph) as if you were an editor preparing an article for publication. Provide feedback, make suggestions, and ask follow-up questions with the goal of helping the author improve their writing. Be terse. Omit boilerplate and praise.\n\n%s",
 		html.Text(in).String(),
 	))))
 }
