@@ -28,7 +28,7 @@ func (c *Claude) Prompt(in string) (out string, err error) {
 		Messages: []anthropic.MessageParam{{
 			Role: anthropic.MessageParamRoleUser,
 			Content: []anthropic.ContentBlockParamUnion{{
-				OfRequestTextBlock: &anthropic.TextBlockParam{Text: in},
+				OfText: &anthropic.TextBlockParam{Text: in},
 			}},
 		}},
 		Model: c.Model,
